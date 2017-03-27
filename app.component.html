@@ -1,73 +1,12 @@
-<!--<div class="overlay">
-  <div class="sky"></div>
-  <div class="ground"></div>
-</div>
-<canvas id="glCanvas">
 
-</canvas>-->
-
-<div id="container">
-
-  <!--Header Section-->
-  <header>
-    <div id="hamburger">
-        <div></div>
-        <div></div>
-        <div></div>
-        
-    </div>
-  </header>
-
-  <!--Nav items (items in sidemenu)-->
-  <nav>
-        <ul>
-            <li><a href="../assets/resume.pdf">resume</a></li>
-            <li><a href="https://www.instagram.com/pizzabanl/">instagram</a></li>
-            <li><a href="https://ca.linkedin.com/in/alisson-baril">linkedin</a></li>
-            <li><a href="https://github.com/alibaril">github</a></li>
-        </ul>
-  </nav>
-
-  <div id="contentLayer"></div>
-  
-  <!--Body content stuff-->
-  <div id = "content">
-
-    <div #rendererContainer>
-
-    </div>
-
-    <div class="section">
-      <div class="line-seperator"></div>
-        <div class="quoteArea">
-          <h3>Alisson Baril</h3>
-          <p id="quote">Powered by WebGL, caffeine and innovation.</p>
-        </div>
-    </div>
-
-    <div class = "section">
-        <div class="line-seperator"></div>
-       
-        <h3>Projects</h3>
-        <div class = "proj" *ngIf="current">
-        
-          <!-- Project 1 -->
-          <div class="projContent">
-            <div class="cen">
-            <a (click)="previous()">
-              <img src="../assets/images/before.png" class="buttonleft"></a>
-                <div class="imgart">
-                  <img [src]="current.img" class="imageArt">
-                </div>
-              <a (click)="next()">
-              <img src="../assets/images/after.png" class="buttonright"></a>
-            </div>
-            <br>
-            <div class="desc"><div [innerHTML]="current.display"></div></div>
-            <br>
-          </div>
-        
-
+<div class="projContent">
+  <div class="cen">
+  <a (click)="previous()">
+    <img src="prev.png" class="buttonleft"></a>
+      <div class="imgart">
+        <img [src]="current.img" class="imageArt">
+      </div>
+    <a (click)="next()">
+    <img src="next.png" class="buttonright"></a>
   </div>
-
-</div>   
+</div>
